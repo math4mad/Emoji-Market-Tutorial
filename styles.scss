@@ -352,6 +352,58 @@ div.sourceCode {
   overflow: hidden;
 }
 
+// Code syntax highlighting — override Quarto's light-theme colors
+// (which are dark and invisible on our dark `pre` background) with the
+// dark-theme equivalents so code is readable in both light and dark modes.
+code.sourceCode > span,
+code span {
+  color: #f8f8f2;  // default text
+}
+code.sourceCode > span.kw,
+code span.kw       { color: #ffa07a; font-weight: bold; }   // keyword
+code.sourceCode > span.cf,
+code span.cf       { color: #ffa07a; font-weight: bold; }   // control flow
+code.sourceCode > span.op,
+code span.op       { color: #ffa07a; }                      // operator
+code.sourceCode > span.ot,
+code span.ot       { color: #00e0e0; }                      // other token
+code.sourceCode > span.st,
+code span.st       { color: #abe338; }                      // string
+code.sourceCode > span.co,
+code span.co       { color: #d4d0ab; font-style: italic; }  // comment
+code.sourceCode > span.fu,
+code span.fu       { color: #ffa07a; }                      // function
+code.sourceCode > span.va,
+code span.va       { color: #00e0e0; }                      // variable
+code.sourceCode > span.an,
+code span.an       { color: #d4d0ab; }                      // annotation
+code.sourceCode > span.bn,
+code span.bn       { color: #d4d0ab; }                      // base-N number
+code.sourceCode > span.dt,
+code span.dt       { color: #ffa07a; }                      // data type
+code.sourceCode > span.dv,
+code span.dv       { color: #d4d0ab; }                      // decimal value
+code.sourceCode > span.ss,
+code span.ss       { color: #abe338; }                      // symbol
+code.sourceCode > span.ch,
+code span.ch       { color: #abe338; }                      // char
+code.sourceCode > span.cn,
+code span.cn       { color: #ffd700; }                      // constant
+code.sourceCode > span.cv,
+code span.cv       { color: #ffd700; }                      // comment-var
+code.sourceCode > span.im,
+code span.im       { color: #abe338; }                      // import
+code.sourceCode > span.sc,
+code span.sc       { color: #abe338; }                      // special char
+code.sourceCode > span.er,
+code span.er       { color: #f07178; font-weight: bold; }   // error
+code.sourceCode > span.at,
+code span.at       { color: #00e0e0; }                      // attribute
+code.sourceCode > span.in,
+code span.in       { color: #d4d0ab; }                      // information
+code.sourceCode > span.al,
+code span.al       { color: #f07178; font-weight: bold; }   // alert
+
 // Tables
 table {
   width: 100%;

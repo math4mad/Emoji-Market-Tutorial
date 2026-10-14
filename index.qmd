@@ -6,122 +6,103 @@ format:
     toc: false
 ---
 
-::: {.hero}
+:::: {.hero}
 [教程 · Tutorial]{.hero-eyebrow}
 
 # 思想如何生长 {#hero-title}
 
 从一次朴素的对话，<br>到一个会思考的仪表盘。
 
-::: {.hero-subtitle}
+:::: {.hero-subtitle}
 这次旅程从"运煤船每月运多少煤给电厂"开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是**过程**本身。
-:::
+::::
 
-::: {.hero-actions}
-[⏵ 开始阅读](chapters/01-origin.qmd){.hero-btn .primary}
-[📊 打开仪表盘](https://emoji-market-dashboard.streamlit.app){.hero-btn .ghost target="_blank"}
+:::: {.hero-actions}
+[📊 打开仪表盘](https://emoji-market-dashboard.streamlit.app){.hero-btn .primary target="_blank"}
+[⏵ 开始阅读](chapters/01-origin.qmd){.hero-btn .ghost}
 [⭐ GitHub 仓库](https://github.com/math4mad/Emoji-Market-Tutorial){.hero-btn .ghost target="_blank"}
-:::
-:::
+::::
+::::
 
 ## 这是一个什么样的教程？ {.mt-5}
 
 很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段"**想法的生长过程**"显式地整理出来，让你看到：
 
-::: {.chapter-grid}
-::: {.chapter-card}
-[**01 缘起**]{.chapter-num}
-[从运煤船到市场]{.chapter-title}
-::: {.chapter-desc}
-一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现
-:::
-:::
-::: {.chapter-card}
-[**02 汇率矩阵**]{.chapter-num}
-[6×6 商品兑换]{.chapter-title}
-::: {.chapter-desc}
-负对数权重把乘法变加法，Dijkstra 找最优套利
-:::
-:::
-::: {.chapter-card}
-[**03 金融危机**]{.chapter-num}
-[危机 · 恢复 · 死锁]{.chapter-title}
-::: {.chapter-desc}
-为什么 Beta-bot 卡在 482？降级搜索如何解决
-:::
-:::
-::: {.chapter-card}
-[**04 货币进化**]{.chapter-num}
-[物物 → 货币 → 数字]{.chapter-title}
-::: {.chapter-desc}
-从羊换铁到金币纸币，N² 矩阵压缩为 N 向量
-:::
-:::
-::: {.chapter-card}
-[**05 国际贸易**]{.chapter-num}
-[钻石王国]{.chapter-title}
-::: {.chapter-desc}
-PPP、套利、稀缺性如何共同决定跨境汇率
-:::
-:::
-::: {.chapter-card}
-[**06 能量块**]{.chapter-num}
-[Proof-of-Work 隐喻]{.chapter-title}
-::: {.chapter-desc}
-算力 + 能源 = 不可伪造的数字货币
-:::
-:::
-::: {.chapter-card}
-[**07 AI 代理人**]{.chapter-num}
-[套利机器人]{.chapter-title}
-::: {.chapter-desc}
-Alpha 与 Beta 的不同风险偏好如何改变市场
-:::
-:::
-::: {.chapter-card}
-[**08 元宇宙出口**]{.chapter-num}
-[训练场隐喻]{.chapter-title}
-::: {.chapter-desc}
-如果 Emoji 世界是高级文明的 RL 沙盒？
-:::
-:::
-::: {.chapter-card}
-[**09 从市场到智能**]{.chapter-num}
-[同构之美]{.chapter-title}
-::: {.chapter-desc}
-交换链 ↔ 神经网络，均值即意义
-:::
-:::
-::: {.chapter-card}
-[**10 系统智能仪表盘**]{.chapter-num}
-[类脑 KPI]{.chapter-title}
-::: {.chapter-desc}
-Φ 整合、认知负荷、学习速率、表征效率
-:::
-:::
-:::
+<div class="chapter-grid">
+  <a class="chapter-card" href="chapters/01-origin.qmd">
+    <div class="chapter-num"><strong>01 缘起</strong></div>
+    <div class="chapter-title">从运煤船到市场</div>
+    <div class="chapter-desc">一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现</div>
+  </a>
+  <a class="chapter-card" href="chapters/02-exchange-matrix.qmd">
+    <div class="chapter-num"><strong>02 汇率矩阵</strong></div>
+    <div class="chapter-title">6×6 商品兑换</div>
+    <div class="chapter-desc">负对数权重把乘法变加法，Dijkstra 找最优套利</div>
+  </a>
+  <a class="chapter-card" href="chapters/03-crisis.qmd">
+    <div class="chapter-num"><strong>03 金融危机</strong></div>
+    <div class="chapter-title">危机 · 恢复 · 死锁</div>
+    <div class="chapter-desc">为什么 Beta-bot 卡在 482？降级搜索如何解决</div>
+  </a>
+  <a class="chapter-card" href="chapters/04-money-evolution.qmd">
+    <div class="chapter-num"><strong>04 货币进化</strong></div>
+    <div class="chapter-title">物物 → 货币 → 数字</div>
+    <div class="chapter-desc">从羊换铁到金币纸币，N² 矩阵压缩为 N 向量</div>
+  </a>
+  <a class="chapter-card" href="chapters/05-international-trade.qmd">
+    <div class="chapter-num"><strong>05 国际贸易</strong></div>
+    <div class="chapter-title">钻石王国</div>
+    <div class="chapter-desc">PPP、套利、稀缺性如何共同决定跨境汇率</div>
+  </a>
+  <a class="chapter-card" href="chapters/06-energy-credits.qmd">
+    <div class="chapter-num"><strong>06 能量块</strong></div>
+    <div class="chapter-title">Proof-of-Work 隐喻</div>
+    <div class="chapter-desc">算力 + 能源 = 不可伪造的数字货币</div>
+  </a>
+  <a class="chapter-card" href="chapters/07-ai-agents.qmd">
+    <div class="chapter-num"><strong>07 AI 代理人</strong></div>
+    <div class="chapter-title">套利机器人</div>
+    <div class="chapter-desc">Alpha 与 Beta 的不同风险偏好如何改变市场</div>
+  </a>
+  <a class="chapter-card" href="chapters/08-metaverse.qmd">
+    <div class="chapter-num"><strong>08 元宇宙出口</strong></div>
+    <div class="chapter-title">训练场隐喻</div>
+    <div class="chapter-desc">如果 Emoji 世界是高级文明的 RL 沙盒？</div>
+  </a>
+  <a class="chapter-card" href="chapters/09-intelligence.qmd">
+    <div class="chapter-num"><strong>09 从市场到智能</strong></div>
+    <div class="chapter-title">同构之美</div>
+    <div class="chapter-desc">交换链 ↔ 神经网络，均值即意义</div>
+  </a>
+  <a class="chapter-card" href="chapters/10-dashboard.qmd">
+    <div class="chapter-num"><strong>10 系统智能仪表盘</strong></div>
+    <div class="chapter-title">类脑 KPI</div>
+    <div class="chapter-desc">Φ 整合、认知负荷、学习速率、表征效率</div>
+  </a>
+</div>
 
 ## 配套项目
 
-::: {.chapter-grid}
-::: {.chapter-card}
-[**📖 教程网站**]{.chapter-num}
-[Emoji Market Tutorial]{.chapter-title}
-::: {.chapter-desc}
-本教程的全部内容，跟随式学习
-:::
-:::
-::: {.chapter-card}
-[**🌍 仪表盘应用**]{.chapter-num}
-[Emoji Market Dashboard]{.chapter-title}
-::: {.chapter-desc}
-可交互的 Streamlit 应用，本教程的最终产物
-:::
-:::
-:::
+<div class="chapter-grid">
+  <a class="chapter-card" href="https://emoji-market-dashboard.streamlit.app" target="_blank">
+    <div class="chapter-num"><strong>📊 在线仪表盘</strong></div>
+    <div class="chapter-title">Emoji Market Dashboard</div>
+    <div class="chapter-desc">已部署的 Streamlit 应用：本教程的最终产物，浏览器直接打开即可使用。</div>
+  </a>
+  <a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-Dashboard" target="_blank">
+    <div class="chapter-num"><strong>💻 仪表盘源码</strong></div>
+    <div class="chapter-title">Emoji-Market-Dashboard</div>
+    <div class="chapter-desc">仪表盘的全部代码：Streamlit + NetworkX + Matplotlib，可本地运行。</div>
+  </a>
+  <a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-qwen" target="_blank">
+    <div class="chapter-num"><strong>🧪 原始产品</strong></div>
+    <div class="chapter-title">Emoji-Market-qwen</div>
+    <div class="chapter-desc">第一版仿真脚本：本教程所有概念的最初发源地。</div>
+  </a>
+</div>
 
-::: {.callout-tip}
+:::: {.callout-tip}
 ## 💡 阅读建议
 
 本教程的章节之间存在**递进关系**，但你也可以直接跳到任何一章。如果你只想看最终的仪表盘，**[第 10 章](chapters/10-dashboard.qmd)** 是一篇独立的总结。
-:::
+::::
