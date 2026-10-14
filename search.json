@@ -1,0 +1,854 @@
+[
+  {
+    "objectID": "chapters/08-metaverse.html",
+    "href": "chapters/08-metaverse.html",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "",
+    "text": "如果这个 Emoji 世界其实是另一个高级文明的”训练场”，我们的 ⚡ 和 AI 对他们来说意味着什么？\n\n这是一个科幻级的问题，但它揭示了一个深刻的类比：我们的市场模拟器，本身就是一个 RL 训练环境。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/08-metaverse.html#一个大胆的假设",
+    "href": "chapters/08-metaverse.html#一个大胆的假设",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "",
+    "text": "如果这个 Emoji 世界其实是另一个高级文明的”训练场”，我们的 ⚡ 和 AI 对他们来说意味着什么？\n\n这是一个科幻级的问题，但它揭示了一个深刻的类比：我们的市场模拟器，本身就是一个 RL 训练环境。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/08-metaverse.html#三层视角",
+    "href": "chapters/08-metaverse.html#三层视角",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "三层视角",
+    "text": "三层视角\n\n内部视角（Emoji 世界内部）\n\n🐑 牧羊人交易、生存、繁衍。\n⚡ 是硬通货，AI 是管家。\n危机是自然灾害。\n\n\n\n设计者视角（我们）\n\n商品 = 节点，汇率 = 边权重。\nAgent = RL 策略，市场 = 环境。\n危机 = 随机扰动，恢复 = 系统稳态。\n\n\n\n外部视角（高级文明）\n\nEmoji 世界 = 一个强化学习训练沙盒。\n⚡ = reward signal，AI = policy network。\n整个市场的演化 = 模型训练过程。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/08-metaverse.html#从模拟器到训练场",
+    "href": "chapters/08-metaverse.html#从模拟器到训练场",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "从模拟器到训练场",
+    "text": "从模拟器到训练场\n\n\n\nEmoji 世界元素\nRL 训练对应\n\n\n\n\n商品节点\n状态空间维度\n\n\n汇率矩阵\n环境转移函数\n\n\n⚡ 能量块\nreward signal\n\n\nAI Agent\npolicy \\(\\pi_\\theta\\)\n\n\n危机\nexploration noise\n\n\n市场恢复\nvalue function 回归",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/08-metaverse.html#哲学推论",
+    "href": "chapters/08-metaverse.html#哲学推论",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "哲学推论",
+    "text": "哲学推论\n如果我们的世界也是某种”训练场”：\n\n物理定律 = 环境规则\n货币 = reward 信号\n人类 = 正在训练的 Agent\n文明进步 = policy optimization\n\n这并非严肃的哲学论断，而是一个 有用的隐喻：它让我们用 RL 的语言重新理解经济系统。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/08-metaverse.html#本章小结",
+    "href": "chapters/08-metaverse.html#本章小结",
+    "title": "8. 元宇宙出口：训练场隐喻",
+    "section": "本章小结",
+    "text": "本章小结\n\nEmoji 市场可以被视为一个 RL 训练环境。\n⚡ 对应 reward，AI 对应 policy。\n“训练场”隐喻为经济系统提供了新的描述语言。\n\n下一章，我们把这个隐喻推向更深：市场与智能的同构。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "8. 元宇宙出口：训练场隐喻"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html",
+    "href": "chapters/02-exchange-matrix.html",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "",
+    "text": "当商品数量从 2 个变成 6 个，两两之间的汇率就需要一张 汇率矩阵 来统一管理。矩阵让我们能一眼看到：\n\n任意两种商品之间的兑换率\n哪些商品是“枢纽”\n是否存在套利机会",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html#为什么需要矩阵",
+    "href": "chapters/02-exchange-matrix.html#为什么需要矩阵",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "",
+    "text": "当商品数量从 2 个变成 6 个，两两之间的汇率就需要一张 汇率矩阵 来统一管理。矩阵让我们能一眼看到：\n\n任意两种商品之间的兑换率\n哪些商品是“枢纽”\n是否存在套利机会",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html#种商品5-个地点",
+    "href": "chapters/02-exchange-matrix.html#种商品5-个地点",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "6 种商品、5 个地点",
+    "text": "6 种商品、5 个地点\n我们假设在伊朗高原上有 5 个村落，每个村落对 6 种商品的定价略有不同：\n\n\n\n商品\n地点 A\n地点 B\n地点 C\n地点 D\n地点 E\n\n\n\n\n🐑 羊\n1.00\n1.05\n0.95\n1.10\n0.98\n\n\n🧶 毛线\n0.20\n0.22\n0.19\n0.21\n0.20\n\n\n🌾 小麦\n0.10\n0.11\n0.09\n0.12\n0.10\n\n\n🔨 铁\n0.50\n0.55\n0.48\n0.52\n0.49\n\n\n🍷 酒\n2.00\n2.20\n1.90\n2.10\n2.05\n\n\n⚡ 能量块\n0.05\n0.06\n0.04\n0.07\n0.05\n\n\n\n这里的“价格”是相对于一只羊的相对价值。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html#套利机会绕一圈能赚钱吗",
+    "href": "chapters/02-exchange-matrix.html#套利机会绕一圈能赚钱吗",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "套利机会：绕一圈能赚钱吗？",
+    "text": "套利机会：绕一圈能赚钱吗？\n假设在某个时刻，某地点出现：\n1 🐑 → 5 🧶\n1 🧶 → 2 🌾\n1 🌾 → 0.5 🔨\n1 🔨 → 0.4 🐑\n把它们连乘：\n\\[\n5 \\times 2 \\times 0.5 \\times 0.4 = 2.0\n\\]\n也就是说，用 1 只羊绕市场一圈，能换回 2 只羊！这就是 套利机会。\n在程序里，我们把汇率取负对数：\n\\[\n\\text{weight} = -\\log(\\text{rate})\n\\]\n这样“汇率连乘”就变成了“权重连加”，可以用 Dijkstra 最短路径算法 来找最便宜的兑换链。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html#代码雏形",
+    "href": "chapters/02-exchange-matrix.html#代码雏形",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "代码雏形",
+    "text": "代码雏形\nimport networkx as nx\nimport math\n\nG = nx.DiGraph()\nG.add_edge(\"🐑\", \"🧶\", weight=-math.log(5))\nG.add_edge(\"🧶\", \"🌾\", weight=-math.log(2))\nG.add_edge(\"🌾\", \"🔨\", weight=-math.log(0.5))\nG.add_edge(\"🔨\", \"🐑\", weight=-math.log(0.4))\n\n# 找从 🐑 到 🐑 的最短（负对数）环\nlength, cycle = nx.single_source_dijkstra(G, \"🐑\", \"🐑\")\nprint(length)  # 约等于 log(1/2)",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/02-exchange-matrix.html#本章小结",
+    "href": "chapters/02-exchange-matrix.html#本章小结",
+    "title": "2. 汇率矩阵：市场的骨架",
+    "section": "本章小结",
+    "text": "本章小结\n\n汇率矩阵 是市场的骨架。\n负对数权重 把乘法市场变成加法网络。\nDijkstra / 最短环 可以自动发现套利路径。\n\n但真实市场不会永远平静。下一章，我们加入 危机。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "2. 汇率矩阵：市场的骨架"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html",
+    "href": "chapters/04-money-evolution.html",
+    "title": "4. 货币进化",
+    "section": "",
+    "text": "当商品种类增多，物物交换面临一个经典问题：需求双重巧合。🐑 的主人想要 🔨，但铁匠不想要羊，只想要 🌾。于是需要中介商品。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html#物物交换的瓶颈",
+    "href": "chapters/04-money-evolution.html#物物交换的瓶颈",
+    "title": "4. 货币进化",
+    "section": "",
+    "text": "当商品种类增多，物物交换面临一个经典问题：需求双重巧合。🐑 的主人想要 🔨，但铁匠不想要羊，只想要 🌾。于是需要中介商品。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html#从一般等价物到货币",
+    "href": "chapters/04-money-evolution.html#从一般等价物到货币",
+    "title": "4. 货币进化",
+    "section": "从一般等价物到货币",
+    "text": "从一般等价物到货币\n交换链的演化可以划分几个阶段：\n\n直接物物交换：🐑 ↔︎ 🔨，需要双方恰好互需。\n中介商品：🐑 → 🧶 → 🌾 → 🔨，毛线和小麦充当中介。\n一般等价物：所有商品都先换成 🌾，再用 🌾 换目标商品。🌾 成了”准货币”。\n铸币：出现 💰 金币，面值稳定，便携、可分割。\n信用货币：💵 纸币，本身无价值，由国家信用背书。\n数字货币：⚡ 能量块，基于算力，不可伪造。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html#货币如何改变矩阵",
+    "href": "chapters/04-money-evolution.html#货币如何改变矩阵",
+    "title": "4. 货币进化",
+    "section": "货币如何改变矩阵",
+    "text": "货币如何改变矩阵\n引入货币后，汇率矩阵发生结构变化：\n\n物物交换矩阵：\\(N \\times N\\)，每对商品都有一个汇率。\n货币定价矩阵：\\(N \\times 1\\)，每种商品只需一个”对货币的价格”。\n\n从 \\(O(N^2)\\) 降到 \\(O(N)\\)，信息量大幅减少。这就是货币的 效率革命。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html#在模拟器中的实现",
+    "href": "chapters/04-money-evolution.html#在模拟器中的实现",
+    "title": "4. 货币进化",
+    "section": "在模拟器中的实现",
+    "text": "在模拟器中的实现\n# 物物交换时代\nG.add_edge(\"🐑\", \"🔨\", rate=0.1)\nG.add_edge(\"🔨\", \"🐑\", rate=10)\n\n# 货币时代：所有商品都通过 💰 中转\nG.add_edge(\"🐑\", \"💰\", rate=1.0)\nG.add_edge(\"💰\", \"🔨\", rate=10)\n# 🐑 → 💰 → 🔨 的隐含汇率 = 1.0 × 10 = 10",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/04-money-evolution.html#本章小结",
+    "href": "chapters/04-money-evolution.html#本章小结",
+    "title": "4. 货币进化",
+    "section": "本章小结",
+    "text": "本章小结\n\n货币把 \\(N \\times N\\) 矩阵压缩为 \\(N \\times 1\\) 向量。\n中介商品是货币的雏形。\n每一层货币进化都减少了交易摩擦。\n\n但不同文明可能使用不同货币。下一章，当两个王国相遇时，汇率该怎么定？",
+    "crumbs": [
+      "首页",
+      "教程",
+      "4. 货币进化"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html",
+    "href": "chapters/09-intelligence.html",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "",
+    "text": "当商品交换的链条不断延长：\n🐑 → 🧶 → 🌾 → 🔨 → 🍷 → 💰 → 💎 → ⚡ → AI → ???\n一个惊人的发现浮现：这条链的结构和大脑神经元网络惊人地相似。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#交换链越来越长",
+    "href": "chapters/09-intelligence.html#交换链越来越长",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "",
+    "text": "当商品交换的链条不断延长：\n🐑 → 🧶 → 🌾 → 🔨 → 🍷 → 💰 → 💎 → ⚡ → AI → ???\n一个惊人的发现浮现：这条链的结构和大脑神经元网络惊人地相似。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#市场-神经网络",
+    "href": "chapters/09-intelligence.html#市场-神经网络",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "市场 ↔︎ 神经网络",
+    "text": "市场 ↔︎ 神经网络\n\n\n\n市场概念\n神经网络对应\n\n\n\n\n商品节点\n神经元\n\n\n汇率（边权重）\n突触连接强度\n\n\n交换路径\n信号传播路径\n\n\n套利环\n反馈回路\n\n\n危机与恢复\n突触可塑性\n\n\n中介商品\n隐藏层节点",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#权重热力图",
+    "href": "chapters/09-intelligence.html#权重热力图",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "权重热力图",
+    "text": "权重热力图\n汇率矩阵本身就是一张权重矩阵。用热力图可视化后：\nAttention 热力图显示：🔨 强烈关注 钉子；🐑 强烈关注 🧶。\n这与 Transformer 的 Attention 热力图 几乎一模一样——只不过 attention 的语义是”相关性”，而汇率的语义是”兑换率”。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#购物车句法树",
+    "href": "chapters/09-intelligence.html#购物车句法树",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "购物车句法树",
+    "text": "购物车句法树\n一个更深的洞察：\n\n购物车里的商品，会不会像我们说的话一样，也有结构、语法和逻辑？\n\n如果购物车 = 一个”句子”，商品 = “词”，那么：\n\n词法层：🛒 中的单个商品 = token embedding\n句法层：商品之间的共现关系 = attention heads 学习到的语法规则\n语义层：购物车的整体意图 = 最终的语义表示\n\n底层: 🐑 🧶 🌾          ← 物理实体（Lexical Level）\n中层: 🧶→🌾, 🐑→🧶      ← 价值转换规则（Syntactic Level）\n高层: 🍷 ← ROOT          ← 意图向量（Semantic Level）\n所有底层和中层计算，最终坍缩为一个高维的意图向量——“获取享乐”。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#means均值即意义",
+    "href": "chapters/09-intelligence.html#means均值即意义",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "MEANS：均值即意义",
+    "text": "MEANS：均值即意义\n\n（MEANS）这个词既意味着”均值”，也意味着”意义”。测量一群人的身高有何意义？均值就是意义。\n\n这个文字游戏揭示了一个深层联系：\n\n均值 (mean) = 把分散的数据压缩为一个代表性数值\n意义 (meaning) = 把多变的经验压缩为一个可理解的意图\n\nTransformer 的每一层都在做”取均值”：把多个 token 的表示加权平均成一个更抽象的表示。每一层都是一次”意义的提炼”。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#从草履虫到-transformer",
+    "href": "chapters/09-intelligence.html#从草履虫到-transformer",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "从草履虫到 Transformer",
+    "text": "从草履虫到 Transformer\n\n草履虫：那里有光，我要移动过去，因为可能有食物。\n\n最原始的”意图”就是梯度跟随。从草履虫的趋光性，到牧羊人的套利行为，到 Transformer 的 attention：\n\\[\n\\text{意图} = \\text{沿着价值梯度移动}\n\\]\n市场中的 Agent 沿汇率梯度套利，神经元沿激活梯度传播，Transformer 沿 attention 权重聚合信息。形式不同，结构同构。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/09-intelligence.html#本章小结",
+    "href": "chapters/09-intelligence.html#本章小结",
+    "title": "9. 从市场到智能：同构之美",
+    "section": "本章小结",
+    "text": "本章小结\n\n交换链的拓扑结构 ↔︎ 神经网络的连接拓扑。\n汇率矩阵 ↔︎ 权重矩阵 / Attention 矩阵。\n购物车 ↔︎ 句子：商品共现映射出”意图的语法”。\nMEANS：均值即意义，抽象即压缩。\n\n当系统复杂到这个程度，光靠聊天已经无法理解全貌。我们需要一个 仪表盘。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "9. 从市场到智能：同构之美"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html",
+    "href": "chapters/07-ai-agents.html",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "",
+    "text": "高原上的牧羊人没时间盯着汇率矩阵寻找套利机会。但如果有一个 AI 代理人 能 24 小时不眠不休地帮他交易呢？",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#牧羊人太忙了",
+    "href": "chapters/07-ai-agents.html#牧羊人太忙了",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "",
+    "text": "高原上的牧羊人没时间盯着汇率矩阵寻找套利机会。但如果有一个 AI 代理人 能 24 小时不眠不休地帮他交易呢？",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#两个-agentalpha-与-beta",
+    "href": "chapters/07-ai-agents.html#两个-agentalpha-与-beta",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "两个 Agent：Alpha 与 Beta",
+    "text": "两个 Agent：Alpha 与 Beta\n我们在模拟器中部署了两个 AI 套利机器人：\n\n\n\nAgent\n风格\n目标\n策略\n\n\n\n\nAlpha-bot\n保守\n💰\n只在周期汇率 &gt; 1.10 时出手\n\n\nBeta-bot\n激进\n⚡\n周期汇率 &gt; 1.01 就出手\n\n\n\n每个 Agent 的核心循环：\ndef agent_step(agent, market):\n    # 1. 在市场图上搜索套利环\n    cycle = find_arbitrage(market.G, agent.capital_currency,\n                           threshold=agent.profit_threshold)\n    if cycle is None:\n        return  # 无机会，按兵不动\n\n    # 2. 计算投入资本量\n    trade_amount = agent.capital * agent.volume_fraction\n\n    # 3. 沿环执行交易（每笔交易会扰动市场）\n    execute_cycle(market, cycle, trade_amount)\n\n    # 4. 更新资本\n    agent.capital *= compute_cycle_rate(market.G, cycle)",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#滑点与市场冲击",
+    "href": "chapters/07-ai-agents.html#滑点与市场冲击",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "滑点与市场冲击",
+    "text": "滑点与市场冲击\n每笔交易本身会让汇率移动：\n\\[\n\\text{rate}_{\\text{new}} = \\text{rate}_{\\text{old}} \\times (1 - \\text{amount} \\times 0.0001)\n\\]\n\namount 越大 → 冲击越大 → 后续交易价格越差\n这就是 滑点 (Slippage)\n\n激进 Agent 的大额交易会破坏自己的套利机会，形成 自我限制。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#ai-会发生什么",
+    "href": "chapters/07-ai-agents.html#ai-会发生什么",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "AI 会发生什么？",
+    "text": "AI 会发生什么？\n当 AI 自动管理资产时，出现几种涌现行为：\n\n竞争：Alpha 和 Beta 抢同一套利环，先到先得。\n策略分化：保守 Agent 在危机时获利，激进 Agent 在平稳期获利。\n死锁：Beta-bot 卡在 482（见 第 3 章）。\n泡沫：激进 Agent 不断交易推动汇率偏离基准。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#代理人的风险偏好",
+    "href": "chapters/07-ai-agents.html#代理人的风险偏好",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "代理人的风险偏好",
+    "text": "代理人的风险偏好\nrisk_preference: 0 = 保守, 1 = 激进\nvolume_fraction: 每个 tick 投入交易的资本比例\nprofit_threshold: 触发套利的周期汇率下限\n这三个参数定义了 Agent 的”性格”，不同参数组合产生完全不同的市场动力学。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "chapters/07-ai-agents.html#本章小结",
+    "href": "chapters/07-ai-agents.html#本章小结",
+    "title": "7. AI 代理人：让算法交易",
+    "section": "本章小结",
+    "text": "本章小结\n\nAI Agent = 自动套利机器人。\n交易本身扰动市场 → 滑点 → 自我限制。\n不同风险偏好产生不同的涌现行为。\n\n如果这个世界其实是一个更高级文明的训练场呢？下一章，我们走向元宇宙。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "7. AI 代理人：让算法交易"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emoji Market · 从对话到仪表盘",
+    "section": "",
+    "text": "本教程记录了一次人机对话如何从一个简单的“运煤船—电厂”问题，逐步生长为一个复杂的 Emoji 市场经济模拟器，并最终沉淀为一座可交互的 系统智能仪表盘。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "Emoji Market · 从对话到仪表盘"
+    ]
+  },
+  {
+    "objectID": "index.html#这是一个什么样的教程",
+    "href": "index.html#这是一个什么样的教程",
+    "title": "Emoji Market · 从对话到仪表盘",
+    "section": "这是一个什么样的教程？",
+    "text": "这是一个什么样的教程？\n很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段“想法的生长过程”显式地整理出来，让你看到：\n\n问题是怎么被提出的 —— 从具体的emoji等式到抽象的市场。\n每一层扩展加入了什么 —— 汇率矩阵、危机、货币、AI、元宇宙。\n为什么最后需要仪表盘 —— 当系统复杂到无法一眼看懂时，可视化成为思考的脚手架。\n怎么把对话变成代码 —— 从原型到生产级 Streamlit 应用。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "Emoji Market · 从对话到仪表盘"
+    ]
+  },
+  {
+    "objectID": "index.html#路线图",
+    "href": "index.html#路线图",
+    "title": "Emoji Market · 从对话到仪表盘",
+    "section": "路线图",
+    "text": "路线图\n\n\n\n章节\n主题\n关键产物\n\n\n\n\n1\n缘起\n🚢(x)=🏭(y) 的 emoji 等式\n\n\n2\n汇率矩阵\n6×6 商品兑换矩阵\n\n\n3\n金融危机\n危机概率、市场恢复\n\n\n4\n货币进化\n从物物交换到 💎、⚡ 货币\n\n\n5\n国际贸易\n跨王国汇率定价\n\n\n6\n能量块\n算力能源数字货币\n\n\n7\nAI 代理人\n自动套利机器人\n\n\n8\n元宇宙出口\n训练场隐喻\n\n\n9\n从市场到智能\n交换链 ↔︎ 神经网络\n\n\n10\n系统智能仪表盘\n可交互 Streamlit 应用",
+    "crumbs": [
+      "首页",
+      "教程",
+      "Emoji Market · 从对话到仪表盘"
+    ]
+  },
+  {
+    "objectID": "index.html#配套项目",
+    "href": "index.html#配套项目",
+    "title": "Emoji Market · 从对话到仪表盘",
+    "section": "配套项目",
+    "text": "配套项目\n\n教程网站（本站）: https://github.com/math4mad/Emoji-Market-Tutorial\n仪表盘应用: https://github.com/math4mad/Emoji-Market-Dashboard",
+    "crumbs": [
+      "首页",
+      "教程",
+      "Emoji Market · 从对话到仪表盘"
+    ]
+  },
+  {
+    "objectID": "index.html#开始阅读",
+    "href": "index.html#开始阅读",
+    "title": "Emoji Market · 从对话到仪表盘",
+    "section": "开始阅读",
+    "text": "开始阅读\n点击左侧目录，或从 第 1 章 开始，跟随一次真实的人机对话，看思想如何一步步成形。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "Emoji Market · 从对话到仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html",
+    "href": "chapters/01-origin.html",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "",
+    "text": "一次对话从这样一个问题开始：\n\n有一艘运煤船，载重量未知，电厂每天用煤量也未知，用假设数字建立每月两者之间的关系。然后用未知数表示出两者的关系。\n\n这是一个非常朴素的“没有数字的数学”问题。我们不关心具体的吨数，而是想描述 输入、消耗与状态 之间的关系。很快，它变成了向量语言：\n\n输入向量：运煤船每月运来的煤\n消耗向量：电厂每天用掉的煤\n状态向量：库存 = 上月库存 + 输入 − 消耗\n\n最终可以写成 \\(A\\,x = 0\\) 的形式：稳定状态下，输入与消耗刚好抵消。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html#原始问题",
+    "href": "chapters/01-origin.html#原始问题",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "",
+    "text": "一次对话从这样一个问题开始：\n\n有一艘运煤船，载重量未知，电厂每天用煤量也未知，用假设数字建立每月两者之间的关系。然后用未知数表示出两者的关系。\n\n这是一个非常朴素的“没有数字的数学”问题。我们不关心具体的吨数，而是想描述 输入、消耗与状态 之间的关系。很快，它变成了向量语言：\n\n输入向量：运煤船每月运来的煤\n消耗向量：电厂每天用掉的煤\n状态向量：库存 = 上月库存 + 输入 − 消耗\n\n最终可以写成 \\(A\\,x = 0\\) 的形式：稳定状态下，输入与消耗刚好抵消。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html#用-emoji-表示方程",
+    "href": "chapters/01-origin.html#用-emoji-表示方程",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "用 emoji 表示方程",
+    "text": "用 emoji 表示方程\n为了让关系更直观，我们开始用 emoji 代替实体、用数字键帽代替数量：\n🚢(x) = 🏭(y)\n其中：\n\n🚢 代表“运煤船输入”\n🏭 代表“电厂消耗”\nx、y 用 0️⃣1️⃣2️⃣3️⃣4️⃣6️⃣7️⃣8️⃣ 等 emoji 数字表示\n\n这种表示法揭示了一个关键点：符号只是关系的标签。当实体和数量都被替换成图像后，剩下的“等式结构”反而更清楚了。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html#从单个等式到交换表",
+    "href": "chapters/01-origin.html#从单个等式到交换表",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "从单个等式到交换表",
+    "text": "从单个等式到交换表\n下一个自然的问题是：如果🚢和🏭不是同一种东西，但它们之间存在兑换比例呢？\n于是我们画出了一张商品交换表：\n\n\n\n卖出 \\ 买入\n🐑 羊\n🐂 牛\n🐔 鸡\n🌾 小麦\n🔨 铁\n\n\n\n\n🐑 羊\n1\n0.3\n2\n5\n0.1\n\n\n🐂 牛\n3\n1\n6\n15\n0.4\n\n\n🐔 鸡\n0.5\n0.16\n1\n2.5\n0.05\n\n\n🌾 小麦\n0.2\n0.06\n0.4\n1\n0.02\n\n\n🔨 铁\n10\n3\n20\n50\n1\n\n\n\n这张表说明：物物交换的世界不需要统一的“货币”。任何两种商品之间只要有一个比率，就能建立市场。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html#不能直接交换怎么办",
+    "href": "chapters/01-origin.html#不能直接交换怎么办",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "不能直接交换怎么办？",
+    "text": "不能直接交换怎么办？\n很快出现了一个新的想法：\n\n如果两个东西不能直接交换，可以通过中介交换获得。这是不是“交换代数”的问题？\n\n例如 🐑 想换 🔨，但牧民与铁匠不直接交易。于是：\n🐑 → 🧶 毛线 → 🌾 小麦 → 🔨 铁\n一条交换链就形成了。这提示我们：\n\n节点 = 商品\n边 = 直接兑换率\n路径 = 间接兑换方式\n最短路径 / 最小成本 = 最优套利或购买策略",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/01-origin.html#本章小结",
+    "href": "chapters/01-origin.html#本章小结",
+    "title": "1. 缘起：从运煤船到市场",
+    "section": "本章小结",
+    "text": "本章小结\n\n\n\n概念\n含义\n\n\n\n\n输入/消耗向量\n描述系统流量\n\n\nemoji 等式\n用图像表示实体与数量\n\n\n交换表\n任意两种商品的直接兑换率\n\n\n交换链\n通过中介完成的间接兑换\n\n\n\n这看似只是游戏，却已经埋下了后来整个市场的种子：节点、边、路径、权重、套利、危机、智能。下一章，我们将这些想法扩展成一个真正的汇率矩阵。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "1. 缘起：从运煤船到市场"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html",
+    "href": "chapters/03-crisis.html",
+    "title": "3. 金融危机模拟",
+    "section": "",
+    "text": "上一章的汇率矩阵是静态的。但真实市场会发生冲击：某条边上的汇率突然腰斩，套利机会消失，甚至出现死锁。我们把这种事件叫做 危机 (Crisis)。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#市场不是静止的",
+    "href": "chapters/03-crisis.html#市场不是静止的",
+    "title": "3. 金融危机模拟",
+    "section": "",
+    "text": "上一章的汇率矩阵是静态的。但真实市场会发生冲击：某条边上的汇率突然腰斩，套利机会消失，甚至出现死锁。我们把这种事件叫做 危机 (Crisis)。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#危机是怎么发生的",
+    "href": "chapters/03-crisis.html#危机是怎么发生的",
+    "title": "3. 金融危机模拟",
+    "section": "危机是怎么发生的",
+    "text": "危机是怎么发生的\n每个 tick（模拟时间步），以概率 \\(p\\) 随机选一条边，把它当前的汇率乘以 0.5：\n\\[\n\\text{rate}_{\\text{new}} = \\text{rate}_{\\text{old}} \\times 0.5\n\\]\n这意味着原本 1 🐑 → 5 🧶 的边，危机后变成 1 🐑 → 2.5 🧶。原来依赖这条边赚钱的套利链立即失效。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#市场恢复",
+    "href": "chapters/03-crisis.html#市场恢复",
+    "title": "3. 金融危机模拟",
+    "section": "市场恢复",
+    "text": "市场恢复\n危机不会永久存在。每个 tick，汇率以速度 \\(r\\) 向基准回归：\n\\[\n\\text{rate}_{\\text{new}} = \\text{rate}_{\\text{old}} + r \\times (\\text{base} - \\text{rate}_{\\text{old}})\n\\]\n\n\\(r\\) 大 → 市场快速恢复，危机是短期的\n\\(r\\) 小 → 市场长期失衡，套利空间被压缩",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#死锁beta-bot-卡在-482",
+    "href": "chapters/03-crisis.html#死锁beta-bot-卡在-482",
+    "title": "3. 金融危机模拟",
+    "section": "死锁：Beta-bot 卡在 482",
+    "text": "死锁：Beta-bot 卡在 482\n在真实模拟中，我们观察到一个奇怪现象：Beta-bot 的资本永远卡在 482。\n原因分析：\n\n某条边汇率暴跌后，\\(-\\log(\\text{rate})\\) 爆炸。\nDijkstra 找到的最短路径成本过高，超过利润阈值。\nAgent 不出手，资本不动。\n市场恢复太慢，阈值永远不满足。\n\n这就是 死锁 (Deadlock)：系统不是崩溃，而是冻结。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#降级搜索",
+    "href": "chapters/03-crisis.html#降级搜索",
+    "title": "3. 金融危机模拟",
+    "section": "降级搜索",
+    "text": "降级搜索\n修复办法：当最优路径不满足利润阈值时，自动尝试 次优路径：\ndef find_arbitrage(G, start, threshold):\n    paths = nx.shortest_simple_paths(G, start, start, weight=\"weight\")\n    for path in paths:\n        cycle_rate = compute_cycle_rate(G, path)\n        if cycle_rate &gt; threshold:\n            return path\n    return None  # 死锁\nshortest_simple_paths 会按成本从小到大枚举所有简单环，直到找到满足条件的为止，避免永远卡死。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#热力图偏离基准",
+    "href": "chapters/03-crisis.html#热力图偏离基准",
+    "title": "3. 金融危机模拟",
+    "section": "热力图：偏离基准",
+    "text": "热力图：偏离基准\n危机期间，最直观的可视化是 偏离基准热力图：\n\\[\n\\text{deviation} = \\log\\left(\\frac{\\text{rate}}{\\text{base}}\\right)\n\\]\n\n红色 → 当前汇率远低于基准（危机区）\n蓝色 → 当前汇率高于基准（泡沫区）\n白色 → 接近基准（均衡）",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/03-crisis.html#本章小结",
+    "href": "chapters/03-crisis.html#本章小结",
+    "title": "3. 金融危机模拟",
+    "section": "本章小结",
+    "text": "本章小结\n\n\n\n概念\n含义\n\n\n\n\n危机\n随机事件使某条边汇率腰斩\n\n\n恢复\n汇率向基准回归\n\n\n死锁\n路径成本过高导致 Agent 冻结\n\n\n降级搜索\n枚举次优路径避免死锁\n\n\n偏离基准热力图\n危机的可视化\n\n\n\n市场有了波动，但还缺少一个关键角色：货币。下一章，我们让交换从物物走向货币。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "3. 金融危机模拟"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html",
+    "href": "chapters/05-international-trade.html",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "",
+    "text": "假设隔壁王国使用 💎 钻石作为货币，而我国使用 💰 金币。两国商人相遇时，需要确定 💰 与 💎 之间的汇率。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html#两个货币体系",
+    "href": "chapters/05-international-trade.html#两个货币体系",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "",
+    "text": "假设隔壁王国使用 💎 钻石作为货币，而我国使用 💰 金币。两国商人相遇时，需要确定 💰 与 💎 之间的汇率。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html#汇率该怎么确定",
+    "href": "chapters/05-international-trade.html#汇率该怎么确定",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "汇率该怎么确定？",
+    "text": "汇率该怎么确定？\n有三种思路：\n\n1. 购买力平价 (PPP)\n比较两国共同商品的价格：\n\\[\n\\text{汇率}_{\\text{💰→💎}} = \\frac{P_{\\text{🌾}}^{\\text{💎王国}}}{P_{\\text{🌾}}^{\\text{💰王国}}}\n\\]\n如果一袋小麦在金币王国值 2 💰，在钻石王国值 0.5 💎，则汇率 = 0.5 / 2 = 0.25 💎/💰。\n\n\n2. 套利均衡\n如果汇率偏离 PPP，商人会跨王国套利，直到差价消失。市场力量自动校正汇率。\n\n\n3. 信用与稀缺\n钻石比金币稀缺，可能产生溢价。汇率不完全由商品决定，还受货币供需影响。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html#双货币市场矩阵",
+    "href": "chapters/05-international-trade.html#双货币市场矩阵",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "双货币市场矩阵",
+    "text": "双货币市场矩阵\n\n\n\n\n💰 王国 🐑\n💎 王国 🐑\n隐含汇率\n\n\n\n\n🐑 价格\n2 💰\n0.5 💎\n0.25 💎/💰\n\n\n🌾 价格\n0.2 💰\n0.06 💎\n0.30 💎/💰\n\n\n🔨 价格\n1 💰\n0.2 💎\n0.20 💎/💰\n\n\n\nPPP 汇率在不同商品间不一致，这就是 实际汇率波动 的来源。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html#模拟器中的跨王国交易",
+    "href": "chapters/05-international-trade.html#模拟器中的跨王国交易",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "模拟器中的跨王国交易",
+    "text": "模拟器中的跨王国交易\n# 两国市场通过一条\"跨境边\"连接\nG.add_edge(\"💰\", \"💎\", rate=0.25, weight=-math.log(0.25))\n# 套利路径：🐑(💰王国) → 💰 → 💎 → 🐑(💎王国) → 💎 → 💰 → ...",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/05-international-trade.html#本章小结",
+    "href": "chapters/05-international-trade.html#本章小结",
+    "title": "5. 国际贸易：钻石王国",
+    "section": "本章小结",
+    "text": "本章小结\n\n国际汇率由 PPP、套利、货币稀缺性共同决定。\n两国市场通过”跨境边”合并成一张大图。\n不同商品的 PPP 汇率不一致 → 汇率波动。\n\n货币进化到极致，会出现一种不依赖任何主权信用的货币。下一章，我们引入 ⚡ 能量块。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "5. 国际贸易：钻石王国"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html",
+    "href": "chapters/10-dashboard.html",
+    "title": "10. 系统智能仪表盘",
+    "section": "",
+    "text": "当市场从 2 个商品扩展到 6+ 种，加上危机、货币、AI Agent、跨王国交易，系统的复杂度已经远超”一眼看懂”的范围。\n仪表盘的目的不是”好看”，而是 把复杂系统的状态压缩为人类可读的视觉信号。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#为什么需要仪表盘",
+    "href": "chapters/10-dashboard.html#为什么需要仪表盘",
+    "title": "10. 系统智能仪表盘",
+    "section": "",
+    "text": "当市场从 2 个商品扩展到 6+ 种，加上危机、货币、AI Agent、跨王国交易，系统的复杂度已经远超”一眼看懂”的范围。\n仪表盘的目的不是”好看”，而是 把复杂系统的状态压缩为人类可读的视觉信号。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#四个类脑指标",
+    "href": "chapters/10-dashboard.html#四个类脑指标",
+    "title": "10. 系统智能仪表盘",
+    "section": "四个类脑指标",
+    "text": "四个类脑指标\n受第 9 章的”市场 ↔︎ 智能同构”启发，我们设计了四个 系统智能指标：\n\n1. 整合信息量 Φ (Integration)\n\\[\n\\Phi = 1 - \\frac{\\text{移除某节点后的平均可达性}}{\\text{全局可达性}}\n\\]\n移除任意一个节点后，系统可达性下降越多，Φ 越高。Φ 高 = 系统不可分割、牵一发而动全身。\n\n\n2. 认知负荷 (Cognitive Load)\n\\[\n\\text{Cognitive Load} = \\frac{\\text{平均交换链长度}}{5}\n\\]\n交换链越长，“思考”越深，认知负荷越大。\n\n\n3. 学习速率 (Learning Rate)\n\\[\n\\text{Learning Rate} = \\frac{10}{\\text{距最近危机的 tick 数}}\n\\]\n危机后恢复越快，学习速率越高。\n\n\n4. 表征效率 (Representation Efficiency)\n\\[\n\\text{Repr Efficiency} = \\frac{\\text{中介商品承载的交易量}}{\\text{总交易量}}\n\\]\n中介商品（🧶 🌾 🔨）承载的交易量占比越高，说明”抽象表示体系”越成熟。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#仪表盘布局",
+    "href": "chapters/10-dashboard.html#仪表盘布局",
+    "title": "10. 系统智能仪表盘",
+    "section": "仪表盘布局",
+    "text": "仪表盘布局\n┌─────────────────────────────────────────┐\n│  顶栏：Emoji Market · 系统智能仪表盘      │\n├──────┬──────────────────────────────────┤\n│      │  KPI 卡片行                       │\n│ 侧   │  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐│\n│ 边   │  │  Φ  │ │ 负荷 │ │ 学习 │ │ 表征 ││\n│ 栏   │  └─────┘ └─────┘ └─────┘ └─────┘│\n│      │                                   │\n│ 参数  │  ┌──────────┐ ┌──────────────┐  │\n│ 控制  │  │ 资本曲线  │ │ 汇率热力图   │  │\n│      │  └──────────┘ └──────────────┘  │\n│      │  ┌────────────────────────────┐ │\n│      │  │ 交易网络图                  │ │\n│      │  └────────────────────────────┘ │\n└──────┴──────────────────────────────────┘",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#从对话到仪表盘的完整路径",
+    "href": "chapters/10-dashboard.html#从对话到仪表盘的完整路径",
+    "title": "10. 系统智能仪表盘",
+    "section": "从对话到仪表盘的完整路径",
+    "text": "从对话到仪表盘的完整路径\n回顾整个教程的路径：\n\n对话 → 提出问题（运煤船 ↔︎ 电厂）\n等式 → 用 emoji 表示（🚢(x) = 🏭(y)）\n矩阵 → 汇率矩阵（6×6 商品兑换）\n图 → 负对数权重 + Dijkstra（套利路径搜索）\n动力学 → 危机、恢复、滑点（市场仿真）\n货币 → 💰 💎 ⚡（货币进化）\nAgent → Alpha / Beta（AI 套利机器人）\n同构 → 市场 ↔︎ 神经网络（智能涌现）\n指标 → Φ、负荷、学习、效率（类脑 KPI）\n仪表盘 → 可交互可视化（Streamlit 应用）",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#配套仪表盘项目",
+    "href": "chapters/10-dashboard.html#配套仪表盘项目",
+    "title": "10. 系统智能仪表盘",
+    "section": "配套仪表盘项目",
+    "text": "配套仪表盘项目\n完整的可交互仪表盘是一个独立的 Streamlit 应用：\n\n代码仓库: https://github.com/math4mad/Emoji-Market-Dashboard\n技术栈: Streamlit + NetworkX + Matplotlib + NumPy/Pandas",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/10-dashboard.html#教程总结",
+    "href": "chapters/10-dashboard.html#教程总结",
+    "title": "10. 系统智能仪表盘",
+    "section": "教程总结",
+    "text": "教程总结\n这个教程展示了一个思想从萌芽到成熟的全过程。关键不是最终的产品，而是 每一步”为什么”：\n\n为什么需要矩阵？ → 因为两两关系太多\n为什么需要图？ → 因为要找最优路径\n为什么需要危机？ → 因为市场不是静态的\n为什么需要货币？ → 因为物物交换效率低\n为什么需要 AI？ → 因为机会转瞬即逝\n为什么需要仪表盘？ → 因为系统已经复杂到无法用语言描述\n\n思想的生长有自己的逻辑。本教程所做的，只是把这个逻辑显式地记录下来。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "10. 系统智能仪表盘"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html",
+    "href": "chapters/06-energy-credits.html",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "",
+    "text": "⚡ 能量块 (Energy Credits) 是一种基于 算力和能源 的数字货币。它的核心思想：\n\n每个 ⚡ 的产生需要消耗真实能源（电力 + 算力）。\n产生过程不可伪造，不可逆。\n总量受能源上限约束，天然通缩。\n\n这本质上是 Proof-of-Work 的隐喻：货币的价值锚定在物理能源消耗上。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html#一种不可伪造的数字货币",
+    "href": "chapters/06-energy-credits.html#一种不可伪造的数字货币",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "",
+    "text": "⚡ 能量块 (Energy Credits) 是一种基于 算力和能源 的数字货币。它的核心思想：\n\n每个 ⚡ 的产生需要消耗真实能源（电力 + 算力）。\n产生过程不可伪造，不可逆。\n总量受能源上限约束，天然通缩。\n\n这本质上是 Proof-of-Work 的隐喻：货币的价值锚定在物理能源消耗上。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html#与传统货币的区别",
+    "href": "chapters/06-energy-credits.html#与传统货币的区别",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "⚡ 与传统货币的区别",
+    "text": "⚡ 与传统货币的区别\n\n\n\n特性\n💰 金币\n💵 纸币\n⚡ 能量块\n\n\n\n\n价值来源\n稀有金属\n国家信用\n算力+能源\n\n\n可伪造性\n可掺假\n可印钞\n不可伪造\n\n\n总量控制\n矿产限制\n央行决定\n能源上限\n\n\n去中心化\n否\n否\n是",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html#在市场中引入",
+    "href": "chapters/06-energy-credits.html#在市场中引入",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "在市场中引入 ⚡",
+    "text": "在市场中引入 ⚡\n# 能量块的\"挖矿\"过程\ndef mine_energy_credits(compute_power, energy_supply):\n    \"\"\"算力 × 能源 = 产出能量块\"\"\"\n    return compute_power * energy_supply * 0.001  # 效率系数\n\n# ⚡ 进入市场后，成为新的货币节点\nG.add_edge(\"⚡\", \"🐑\", rate=20)   # 1 ⚡ 换 20 只羊\nG.add_edge(\"🐑\", \"⚡\", rate=0.05) # 1 只羊换 0.05 ⚡",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html#能量块如何改变市场",
+    "href": "chapters/06-energy-credits.html#能量块如何改变市场",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "能量块如何改变市场",
+    "text": "能量块如何改变市场\n⚡ 的引入让市场多了一个维度：\n\n货币供给内生：⚡ 产量取决于挖矿投入，不再由央行决定。\n能源价格传导：电力涨价 → 挖矿成本上升 → ⚡ 升值 → 所有商品对 ⚡ 的价格下降。\n通缩压力：⚡ 总量有上限，商品不断增长 → ⚡ 购买力上升 → 持币者受益。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  },
+  {
+    "objectID": "chapters/06-energy-credits.html#本章小结",
+    "href": "chapters/06-energy-credits.html#本章小结",
+    "title": "6. 能量块 ⚡：算力货币",
+    "section": "本章小结",
+    "text": "本章小结\n\n⚡ 是 Proof-of-Work 的隐喻。\n货币供给从外生（央行）变为内生（算力+能源）。\n能源价格波动会传导到整个市场。\n\n当货币可以被算法管理时，一个新角色出现了：AI 代理人。下一章，让 AI 替牧羊人管钱。",
+    "crumbs": [
+      "首页",
+      "教程",
+      "6. 能量块 ⚡：算力货币"
+    ]
+  }
+]
