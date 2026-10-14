@@ -83,6 +83,7 @@ $$
 
 完整的可交互仪表盘是一个独立的 Streamlit 应用：
 
+- **在线地址**: <https://emoji-market-dashboard.streamlit.app>
 - **代码仓库**: <https://github.com/math4mad/Emoji-Market-Dashboard>
 - **技术栈**: Streamlit + NetworkX + Matplotlib + NumPy/Pandas
 

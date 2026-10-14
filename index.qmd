@@ -19,7 +19,7 @@ format:
 
 ::: {.hero-actions}
 [⏵ 开始阅读](chapters/01-origin.qmd){.hero-btn .primary}
-[📊 查看仪表盘](https://github.com/math4mad/Emoji-Market-Dashboard){.hero-btn .ghost target="_blank"}
+[📊 打开仪表盘](https://emoji-market-dashboard.streamlit.app){.hero-btn .ghost target="_blank"}
 [⭐ GitHub 仓库](https://github.com/math4mad/Emoji-Market-Tutorial){.hero-btn .ghost target="_blank"}
 :::
 :::

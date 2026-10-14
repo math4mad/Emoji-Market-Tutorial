@@ -39,7 +39,8 @@ quarto render
 
 ## 配套项目
 
-- **仪表盘应用**: [Emoji-Market-Dashboard](https://github.com/math4mad/Emoji-Market-Dashboard)
+- **在线仪表盘**: <https://emoji-market-dashboard.streamlit.app>
+- **仪表盘代码**: [Emoji-Market-Dashboard](https://github.com/math4mad/Emoji-Market-Dashboard)
 - **原始产品**: [Emoji-Market-qwen](https://github.com/math4mad/Emoji-Market-qwen)
 
 ## 许可证
