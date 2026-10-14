@@ -400,7 +400,7 @@
     "href": "index.html",
     "title": "Emoji Market · 从对话到仪表盘",
     "section": "",
-    "text": "教程 · Tutorial\n\n\n从一次朴素的对话，到一个会思考的仪表盘。\n\n这次旅程从”运煤船每月运多少煤给电厂”开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是过程本身。\n\n\n⏵ 开始阅读 📊 查看仪表盘 ⭐ GitHub 仓库",
+    "text": "教程 · Tutorial\n\n\n从一次朴素的对话，到一个会思考的仪表盘。\n\n这次旅程从”运煤船每月运多少煤给电厂”开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是过程本身。\n\n\n⏵ 开始阅读 📊 打开仪表盘 ⭐ GitHub 仓库",
     "crumbs": [
       "首页",
       "开始",
@@ -736,7 +736,7 @@
     "href": "chapters/10-dashboard.html#配套仪表盘项目",
     "title": "10. 系统智能仪表盘",
     "section": "配套仪表盘项目",
-    "text": "配套仪表盘项目\n完整的可交互仪表盘是一个独立的 Streamlit 应用：\n\n代码仓库: https://github.com/math4mad/Emoji-Market-Dashboard\n技术栈: Streamlit + NetworkX + Matplotlib + NumPy/Pandas",
+    "text": "配套仪表盘项目\n完整的可交互仪表盘是一个独立的 Streamlit 应用：\n\n在线地址: https://emoji-market-dashboard.streamlit.app\n代码仓库: https://github.com/math4mad/Emoji-Market-Dashboard\n技术栈: Streamlit + NetworkX + Matplotlib + NumPy/Pandas",
     "crumbs": [
       "首页",
       "教程",
