@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Emoji Market · 从对话到仪表盘"
+  description: "一个关于思想如何逐步演化为交互式系统的教程。"
+  site-url: https://math4mad.github.io/Emoji-Market-Tutorial
+  repo-url: https://github.com/math4mad/Emoji-Market-Tutorial
+  repo-actions: [edit, issue]
+  navbar:
+    left:
+      - href: index.qmd
+        text: 首页
+      - href: chapters/01-origin.qmd
+        text: 缘起
+      - text: 教程章节
+        menu:
+          - href: chapters/01-origin.qmd
+            text: 1. 缘起：从运煤船到市场
+          - href: chapters/02-exchange-matrix.qmd
+            text: 2. 汇率矩阵
+          - href: chapters/03-crisis.qmd
+            text: 3. 金融危机模拟
+          - href: chapters/04-money-evolution.qmd
+            text: 4. 货币进化
+          - href: chapters/05-international-trade.qmd
+            text: 5. 国际贸易
+          - href: chapters/06-energy-credits.qmd
+            text: 6. 能量块数字货币
+          - href: chapters/07-ai-agents.qmd
+            text: 7. AI 代理人
+          - href: chapters/08-metaverse.qmd
+            text: 8. 元宇宙出口
+          - href: chapters/09-intelligence.qmd
+            text: 9. 从市场到智能
+          - href: chapters/10-dashboard.qmd
+            text: 10. 系统智能仪表盘
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "教程"
+        contents:
+          - index.qmd
+          - chapters/01-origin.qmd
+          - chapters/02-exchange-matrix.qmd
+          - chapters/03-crisis.qmd
+          - chapters/04-money-evolution.qmd
+          - chapters/05-international-trade.qmd
+          - chapters/06-energy-credits.qmd
+          - chapters/07-ai-agents.qmd
+          - chapters/08-metaverse.qmd
+          - chapters/09-intelligence.qmd
+          - chapters/10-dashboard.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.css]
+      dark: [darkly, styles.css]
+    toc: true
+    toc-location: right
+    toc-title: "本章目录"
+    code-copy: true
+    code-overflow: wrap
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+lang: zh

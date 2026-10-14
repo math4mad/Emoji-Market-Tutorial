@@ -1,0 +1,76 @@
+---
+title: "7. AI 代理人：让算法交易"
+---
+
+## 牧羊人太忙了
+
+高原上的牧羊人没时间盯着汇率矩阵寻找套利机会。但如果有一个 **AI 代理人** 能 24 小时不眠不休地帮他交易呢？
+
+## 两个 Agent：Alpha 与 Beta
+
+我们在模拟器中部署了两个 AI 套利机器人：
+
+| Agent | 风格 | 目标 | 策略 |
+|---|---|---|---|
+| Alpha-bot | 保守 | 💰 | 只在周期汇率 > 1.10 时出手 |
+| Beta-bot | 激进 | ⚡ | 周期汇率 > 1.01 就出手 |
+
+每个 Agent 的核心循环：
+
+```python
+def agent_step(agent, market):
+    # 1. 在市场图上搜索套利环
+    cycle = find_arbitrage(market.G, agent.capital_currency,
+                           threshold=agent.profit_threshold)
+    if cycle is None:
+        return  # 无机会，按兵不动
+
+    # 2. 计算投入资本量
+    trade_amount = agent.capital * agent.volume_fraction
+
+    # 3. 沿环执行交易（每笔交易会扰动市场）
+    execute_cycle(market, cycle, trade_amount)
+
+    # 4. 更新资本
+    agent.capital *= compute_cycle_rate(market.G, cycle)
+```
+
+## 滑点与市场冲击
+
+每笔交易本身会让汇率移动：
+
+$$
+\text{rate}_{\text{new}} = \text{rate}_{\text{old}} \times (1 - \text{amount} \times 0.0001)
+$$
+
+- amount 越大 → 冲击越大 → 后续交易价格越差
+- 这就是 **滑点 (Slippage)**
+
+激进 Agent 的大额交易会破坏自己的套利机会，形成 **自我限制**。
+
+## AI 会发生什么？
+
+当 AI 自动管理资产时，出现几种涌现行为：
+
+1. **竞争**：Alpha 和 Beta 抢同一套利环，先到先得。
+2. **策略分化**：保守 Agent 在危机时获利，激进 Agent 在平稳期获利。
+3. **死锁**：Beta-bot 卡在 482（见 [第 3 章](03-crisis.qmd)）。
+4. **泡沫**：激进 Agent 不断交易推动汇率偏离基准。
+
+## 代理人的风险偏好
+
+```python
+risk_preference: 0 = 保守, 1 = 激进
+volume_fraction: 每个 tick 投入交易的资本比例
+profit_threshold: 触发套利的周期汇率下限
+```
+
+这三个参数定义了 Agent 的"性格"，不同参数组合产生完全不同的市场动力学。
+
+## 本章小结
+
+- AI Agent = 自动套利机器人。
+- 交易本身扰动市场 → 滑点 → 自我限制。
+- 不同风险偏好产生不同的涌现行为。
+
+如果这个世界其实是一个更高级文明的训练场呢？下一章，我们走向元宇宙。

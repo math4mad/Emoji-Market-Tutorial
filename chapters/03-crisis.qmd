@@ -1,0 +1,81 @@
+---
+title: "3. 金融危机模拟"
+---
+
+## 市场不是静止的
+
+上一章的汇率矩阵是静态的。但真实市场会发生冲击：某条边上的汇率突然腰斩，套利机会消失，甚至出现死锁。我们把这种事件叫做 **危机 (Crisis)**。
+
+## 危机是怎么发生的
+
+每个 tick（模拟时间步），以概率 $p$ 随机选一条边，把它当前的汇率乘以 0.5：
+
+$$
+\text{rate}_{\text{new}} = \text{rate}_{\text{old}} \times 0.5
+$$
+
+这意味着原本 1 🐑 → 5 🧶 的边，危机后变成 1 🐑 → 2.5 🧶。原来依赖这条边赚钱的套利链立即失效。
+
+## 市场恢复
+
+危机不会永久存在。每个 tick，汇率以速度 $r$ 向基准回归：
+
+$$
+\text{rate}_{\text{new}} = \text{rate}_{\text{old}} + r \times (\text{base} - \text{rate}_{\text{old}})
+$$
+
+- $r$ 大 → 市场快速恢复，危机是短期的
+- $r$ 小 → 市场长期失衡，套利空间被压缩
+
+## 死锁：Beta-bot 卡在 482
+
+在真实模拟中，我们观察到一个奇怪现象：**Beta-bot 的资本永远卡在 482**。
+
+原因分析：
+
+1. 某条边汇率暴跌后，$-\log(\text{rate})$ 爆炸。
+2. Dijkstra 找到的最短路径成本过高，超过利润阈值。
+3. Agent 不出手，资本不动。
+4. 市场恢复太慢，阈值永远不满足。
+
+这就是 **死锁 (Deadlock)**：系统不是崩溃，而是冻结。
+
+## 降级搜索
+
+修复办法：当最优路径不满足利润阈值时，自动尝试 **次优路径**：
+
+```python
+def find_arbitrage(G, start, threshold):
+    paths = nx.shortest_simple_paths(G, start, start, weight="weight")
+    for path in paths:
+        cycle_rate = compute_cycle_rate(G, path)
+        if cycle_rate > threshold:
+            return path
+    return None  # 死锁
+```
+
+`shortest_simple_paths` 会按成本从小到大枚举所有简单环，直到找到满足条件的为止，避免永远卡死。
+
+## 热力图：偏离基准
+
+危机期间，最直观的可视化是 **偏离基准热力图**：
+
+$$
+\text{deviation} = \log\left(\frac{\text{rate}}{\text{base}}\right)
+$$
+
+- 红色 → 当前汇率远低于基准（危机区）
+- 蓝色 → 当前汇率高于基准（泡沫区）
+- 白色 → 接近基准（均衡）
+
+## 本章小结
+
+| 概念 | 含义 |
+|---|---|
+| 危机 | 随机事件使某条边汇率腰斩 |
+| 恢复 | 汇率向基准回归 |
+| 死锁 | 路径成本过高导致 Agent 冻结 |
+| 降级搜索 | 枚举次优路径避免死锁 |
+| 偏离基准热力图 | 危机的可视化 |
+
+市场有了波动，但还缺少一个关键角色：**货币**。下一章，我们让交换从物物走向货币。
