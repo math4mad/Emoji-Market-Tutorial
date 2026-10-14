@@ -28,7 +28,7 @@ format:
 
 很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段"**想法的生长过程**"显式地整理出来，让你看到：
 
-{{< rawhtml >}}
+```{=html}
 <div class="chapter-grid">
 <a class="chapter-card" href="chapters/01-origin.html">
 <div class="chapter-num"><strong>01 缘起</strong></div>
@@ -81,11 +81,11 @@ format:
 <div class="chapter-desc">Φ 整合、认知负荷、学习速率、表征效率</div>
 </a>
 </div>
-{{< /rawhtml >}}
+```
 
 ## 配套项目
 
-{{< rawhtml >}}
+```{=html}
 <div class="chapter-grid">
 <a class="chapter-card" href="https://emoji-market-dashboard.streamlit.app" target="_blank">
 <div class="chapter-num"><strong>📊 在线仪表盘</strong></div>
@@ -103,7 +103,7 @@ format:
 <div class="chapter-desc">第一版仿真脚本：本教程所有概念的最初发源地。</div>
 </a>
 </div>
-{{< /rawhtml >}}
+```
 
 ::::: {.callout-tip}
 ## 💡 阅读建议
