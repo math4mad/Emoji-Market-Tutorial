@@ -1,5 +1,4 @@
-/* Custom styles for Emoji Market Tutorial */
-
+/*-- scss:defaults --*/
 :root {
   --brand: #3b82f6;
   --brand-dark: #1d4ed8;
@@ -8,6 +7,7 @@
   --danger: #ef4444;
 }
 
+/*-- scss:rules --*/
 body {
   font-family: "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
