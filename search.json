@@ -400,7 +400,7 @@
     "href": "index.html",
     "title": "Emoji Market · 从对话到仪表盘",
     "section": "",
-    "text": "教程 · Tutorial\n\n\n从一次朴素的对话，到一个会思考的仪表盘。\n\n这次旅程从”运煤船每月运多少煤给电厂”开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是过程本身。\n\n\n⏵ 开始阅读 📊 打开仪表盘 ⭐ GitHub 仓库",
+    "text": "教程 · Tutorial\n\n\n从一次朴素的对话，到一个会思考的仪表盘。\n\n这次旅程从”运煤船每月运多少煤给电厂”开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是过程本身。\n\n\n📊 打开仪表盘 ⏵ 开始阅读 ⭐ GitHub 仓库",
     "crumbs": [
       "首页",
       "开始",
@@ -412,7 +412,7 @@
     "href": "index.html#这是一个什么样的教程",
     "title": "Emoji Market · 从对话到仪表盘",
     "section": "这是一个什么样的教程？",
-    "text": "这是一个什么样的教程？\n很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段”想法的生长过程”显式地整理出来，让你看到：\n\n\n01 缘起 从运煤船到市场 ::: {.chapter-desc} 一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现\n\n\n\n02 汇率矩阵 6×6 商品兑换 ::: {.chapter-desc} 负对数权重把乘法变加法，Dijkstra 找最优套利\n\n::: ::: {.chapter-card} 03 金融危机 危机 · 恢复 · 死锁 ::: {.chapter-desc} 为什么 Beta-bot 卡在 482？降级搜索如何解决 ::: ::: ::: {.chapter-card} 04 货币进化 物物 → 货币 → 数字 ::: {.chapter-desc} 从羊换铁到金币纸币，N² 矩阵压缩为 N 向量 ::: ::: ::: {.chapter-card} 05 国际贸易 钻石王国 ::: {.chapter-desc} PPP、套利、稀缺性如何共同决定跨境汇率 ::: ::: ::: {.chapter-card} 06 能量块 Proof-of-Work 隐喻 ::: {.chapter-desc} 算力 + 能源 = 不可伪造的数字货币 ::: ::: ::: {.chapter-card} 07 AI 代理人 套利机器人 ::: {.chapter-desc} Alpha 与 Beta 的不同风险偏好如何改变市场 ::: ::: ::: {.chapter-card} 08 元宇宙出口 训练场隐喻 ::: {.chapter-desc} 如果 Emoji 世界是高级文明的 RL 沙盒？ ::: ::: ::: {.chapter-card} 09 从市场到智能 同构之美 ::: {.chapter-desc} 交换链 ↔︎ 神经网络，均值即意义 ::: ::: ::: {.chapter-card} 10 系统智能仪表盘 类脑 KPI ::: {.chapter-desc} Φ 整合、认知负荷、学习速率、表征效率 ::: ::: :::",
+    "text": "这是一个什么样的教程？\n很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段”想法的生长过程”显式地整理出来，让你看到：\n\n\n\n01 缘起\n\n&lt;div class=\"chapter-title\"&gt;从运煤船到市场&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现&lt;/div&gt;\n \n\n02 汇率矩阵\n\n&lt;div class=\"chapter-title\"&gt;6×6 商品兑换&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;负对数权重把乘法变加法，Dijkstra 找最优套利&lt;/div&gt;\n \n\n03 金融危机\n\n&lt;div class=\"chapter-title\"&gt;危机 · 恢复 · 死锁&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;为什么 Beta-bot 卡在 482？降级搜索如何解决&lt;/div&gt;\n \n\n04 货币进化\n\n&lt;div class=\"chapter-title\"&gt;物物 → 货币 → 数字&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;从羊换铁到金币纸币，N² 矩阵压缩为 N 向量&lt;/div&gt;\n \n\n05 国际贸易\n\n&lt;div class=\"chapter-title\"&gt;钻石王国&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;PPP、套利、稀缺性如何共同决定跨境汇率&lt;/div&gt;\n \n\n06 能量块\n\n&lt;div class=\"chapter-title\"&gt;Proof-of-Work 隐喻&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;算力 + 能源 = 不可伪造的数字货币&lt;/div&gt;\n \n\n07 AI 代理人\n\n&lt;div class=\"chapter-title\"&gt;套利机器人&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;Alpha 与 Beta 的不同风险偏好如何改变市场&lt;/div&gt;\n \n\n08 元宇宙出口\n\n&lt;div class=\"chapter-title\"&gt;训练场隐喻&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;如果 Emoji 世界是高级文明的 RL 沙盒？&lt;/div&gt;\n \n\n09 从市场到智能\n\n&lt;div class=\"chapter-title\"&gt;同构之美&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;交换链 ↔ 神经网络，均值即意义&lt;/div&gt;\n \n\n10 系统智能仪表盘\n\n&lt;div class=\"chapter-title\"&gt;类脑 KPI&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;Φ 整合、认知负荷、学习速率、表征效率&lt;/div&gt;",
     "crumbs": [
       "首页",
       "开始",
@@ -424,7 +424,7 @@
     "href": "index.html#配套项目",
     "title": "Emoji Market · 从对话到仪表盘",
     "section": "配套项目",
-    "text": "配套项目\n\n\n📖 教程网站 Emoji Market Tutorial ::: {.chapter-desc} 本教程的全部内容，跟随式学习\n\n\n\n🌍 仪表盘应用 Emoji Market Dashboard ::: {.chapter-desc} 可交互的 Streamlit 应用，本教程的最终产物\n\n::: :::\n\n\n\n\n\n\n💡 阅读建议\n\n\n\n本教程的章节之间存在递进关系，但你也可以直接跳到任何一章。如果你只想看最终的仪表盘，第 10 章 是一篇独立的总结。",
+    "text": "配套项目\n\n\n\n📊 在线仪表盘\n\n&lt;div class=\"chapter-title\"&gt;Emoji Market Dashboard&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;已部署的 Streamlit 应用：本教程的最终产物，浏览器直接打开即可使用。&lt;/div&gt;\n \n\n💻 仪表盘源码\n\n&lt;div class=\"chapter-title\"&gt;Emoji-Market-Dashboard&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;仪表盘的全部代码：Streamlit + NetworkX + Matplotlib，可本地运行。&lt;/div&gt;\n \n\n🧪 原始产品\n\n&lt;div class=\"chapter-title\"&gt;Emoji-Market-qwen&lt;/div&gt;\n&lt;div class=\"chapter-desc\"&gt;第一版仿真脚本：本教程所有概念的最初发源地。&lt;/div&gt;\n\n\n\n\n\n\n\n\n💡 阅读建议\n\n\n\n本教程的章节之间存在递进关系，但你也可以直接跳到任何一章。如果你只想看最终的仪表盘，第 10 章 是一篇独立的总结。",
     "crumbs": [
       "首页",
       "开始",

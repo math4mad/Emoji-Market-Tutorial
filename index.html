@@ -75,8 +75,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-879cac073113ed3543dd9262c8fcf428.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6595b702d514d1f03b24b21d1b33e969.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-03fc7bde45f8a4186da77858f007d45e.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e9a3582e0f4f42919d99d09b20586bc8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9378a7d74d5ff9108898f0fb82f1ba00.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -349,7 +349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>这次旅程从”运煤船每月运多少煤给电厂”开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是<strong>过程</strong>本身。</p>
 </div>
 <div class="hero-actions">
-<p><a href="./chapters/01-origin.html" class="hero-btn primary">⏵ 开始阅读</a> <a href="https://emoji-market-dashboard.streamlit.app" class="hero-btn ghost" target="_blank">📊 打开仪表盘</a> <a href="https://github.com/math4mad/Emoji-Market-Tutorial" class="hero-btn ghost" target="_blank">⭐ GitHub 仓库</a></p>
+<p><a href="https://emoji-market-dashboard.streamlit.app" class="hero-btn primary" target="_blank">📊 打开仪表盘</a> <a href="./chapters/01-origin.html" class="hero-btn ghost">⏵ 开始阅读</a> <a href="https://github.com/math4mad/Emoji-Market-Tutorial" class="hero-btn ghost" target="_blank">⭐ GitHub 仓库</a></p>
 </div>
 </section>
 </div>
@@ -357,26 +357,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="mt-5 anchored" data-anchor-id="这是一个什么样的教程">这是一个什么样的教程？</h2>
 <p>很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段”<strong>想法的生长过程</strong>”显式地整理出来，让你看到：</p>
 <div class="chapter-grid">
-<div class="chapter-card">
-<p><span class="chapter-num"><strong>01 缘起</strong></span> <span class="chapter-title">从运煤船到市场</span> ::: {.chapter-desc} 一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现</p>
+<a class="chapter-card" href="./chapters/01-origin.html">
+<div class="chapter-num">
+<strong>01 缘起</strong>
 </div>
+<pre><code>&lt;div class="chapter-title"&gt;从运煤船到市场&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/02-exchange-matrix.html">
+<div class="chapter-num">
+<strong>02 汇率矩阵</strong>
 </div>
-<div class="chapter-card">
-<p><span class="chapter-num"><strong>02 汇率矩阵</strong></span> <span class="chapter-title">6×6 商品兑换</span> ::: {.chapter-desc} 负对数权重把乘法变加法，Dijkstra 找最优套利</p>
+<pre><code>&lt;div class="chapter-title"&gt;6×6 商品兑换&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;负对数权重把乘法变加法，Dijkstra 找最优套利&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/03-crisis.html">
+<div class="chapter-num">
+<strong>03 金融危机</strong>
 </div>
-<p>::: ::: {.chapter-card} <span class="chapter-num"><strong>03 金融危机</strong></span> <span class="chapter-title">危机 · 恢复 · 死锁</span> ::: {.chapter-desc} 为什么 Beta-bot 卡在 482？降级搜索如何解决 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>04 货币进化</strong></span> <span class="chapter-title">物物 → 货币 → 数字</span> ::: {.chapter-desc} 从羊换铁到金币纸币，N² 矩阵压缩为 N 向量 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>05 国际贸易</strong></span> <span class="chapter-title">钻石王国</span> ::: {.chapter-desc} PPP、套利、稀缺性如何共同决定跨境汇率 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>06 能量块</strong></span> <span class="chapter-title">Proof-of-Work 隐喻</span> ::: {.chapter-desc} 算力 + 能源 = 不可伪造的数字货币 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>07 AI 代理人</strong></span> <span class="chapter-title">套利机器人</span> ::: {.chapter-desc} Alpha 与 Beta 的不同风险偏好如何改变市场 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>08 元宇宙出口</strong></span> <span class="chapter-title">训练场隐喻</span> ::: {.chapter-desc} 如果 Emoji 世界是高级文明的 RL 沙盒？ ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>09 从市场到智能</strong></span> <span class="chapter-title">同构之美</span> ::: {.chapter-desc} 交换链 ↔︎ 神经网络，均值即意义 ::: ::: ::: {.chapter-card} <span class="chapter-num"><strong>10 系统智能仪表盘</strong></span> <span class="chapter-title">类脑 KPI</span> ::: {.chapter-desc} Φ 整合、认知负荷、学习速率、表征效率 ::: ::: :::</p>
+<pre><code>&lt;div class="chapter-title"&gt;危机 · 恢复 · 死锁&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;为什么 Beta-bot 卡在 482？降级搜索如何解决&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/04-money-evolution.html">
+<div class="chapter-num">
+<strong>04 货币进化</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;物物 → 货币 → 数字&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;从羊换铁到金币纸币，N² 矩阵压缩为 N 向量&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/05-international-trade.html">
+<div class="chapter-num">
+<strong>05 国际贸易</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;钻石王国&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;PPP、套利、稀缺性如何共同决定跨境汇率&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/06-energy-credits.html">
+<div class="chapter-num">
+<strong>06 能量块</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;Proof-of-Work 隐喻&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;算力 + 能源 = 不可伪造的数字货币&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/07-ai-agents.html">
+<div class="chapter-num">
+<strong>07 AI 代理人</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;套利机器人&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;Alpha 与 Beta 的不同风险偏好如何改变市场&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/08-metaverse.html">
+<div class="chapter-num">
+<strong>08 元宇宙出口</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;训练场隐喻&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;如果 Emoji 世界是高级文明的 RL 沙盒？&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/09-intelligence.html">
+<div class="chapter-num">
+<strong>09 从市场到智能</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;同构之美&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;交换链 ↔ 神经网络，均值即意义&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="./chapters/10-dashboard.html">
+<div class="chapter-num">
+<strong>10 系统智能仪表盘</strong>
+</div>
+<pre><code>&lt;div class="chapter-title"&gt;类脑 KPI&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;Φ 整合、认知负荷、学习速率、表征效率&lt;/div&gt;</code></pre>
+</a><p><a class="chapter-card" href="./chapters/10-dashboard.html"></a></p>
+</div>
 </section>
 <section id="配套项目" class="level2">
 <h2 class="anchored" data-anchor-id="配套项目">配套项目</h2>
 <div class="chapter-grid">
-<div class="chapter-card">
-<p><span class="chapter-num"><strong>📖 教程网站</strong></span> <span class="chapter-title">Emoji Market Tutorial</span> ::: {.chapter-desc} 本教程的全部内容，跟随式学习</p>
+<a class="chapter-card" href="https://emoji-market-dashboard.streamlit.app" target="_blank">
+<div class="chapter-num">
+<strong>📊 在线仪表盘</strong>
 </div>
+<pre><code>&lt;div class="chapter-title"&gt;Emoji Market Dashboard&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;已部署的 Streamlit 应用：本教程的最终产物，浏览器直接打开即可使用。&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-Dashboard" target="_blank">
+<div class="chapter-num">
+<strong>💻 仪表盘源码</strong>
 </div>
-<div class="chapter-card">
-<p><span class="chapter-num"><strong>🌍 仪表盘应用</strong></span> <span class="chapter-title">Emoji Market Dashboard</span> ::: {.chapter-desc} 可交互的 Streamlit 应用，本教程的最终产物</p>
+<pre><code>&lt;div class="chapter-title"&gt;Emoji-Market-Dashboard&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;仪表盘的全部代码：Streamlit + NetworkX + Matplotlib，可本地运行。&lt;/div&gt;</code></pre>
+</a> <a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-qwen" target="_blank">
+<div class="chapter-num">
+<strong>🧪 原始产品</strong>
 </div>
-<p>::: :::</p>
+<pre><code>&lt;div class="chapter-title"&gt;Emoji-Market-qwen&lt;/div&gt;
+&lt;div class="chapter-desc"&gt;第一版仿真脚本：本教程所有概念的最初发源地。&lt;/div&gt;</code></pre>
+</a><p><a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-qwen" target="_blank"></a></p>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1018,133 +1084,114 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">源代码</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Emoji Market · 从对话到仪表盘"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "一个关于思想如何逐步演化为交互式系统的教程"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: false</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>::: {.hero}</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">教程 · Tutorial</span><span class="co">]</span>{.hero-eyebrow}</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># 思想如何生长 {#hero-title}</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>从一次朴素的对话，&lt;br&gt;到一个会思考的仪表盘。</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.hero-subtitle}</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>这次旅程从"运煤船每月运多少煤给电厂"开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是**过程**本身。</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>::: {.hero-actions}</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⏵ 开始阅读</span><span class="co">](chapters/01-origin.qmd)</span>{.hero-btn .primary}</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">📊 打开仪表盘</span><span class="co">](https://emoji-market-dashboard.streamlit.app)</span>{.hero-btn .ghost target="_blank"}</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⭐ GitHub 仓库</span><span class="co">](https://github.com/math4mad/Emoji-Market-Tutorial)</span>{.hero-btn .ghost target="_blank"}</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## 这是一个什么样的教程？ {.mt-5}</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段"**想法的生长过程**"显式地整理出来，让你看到：</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>::: {.chapter-grid}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**01 缘起**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">从运煤船到市场</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**02 汇率矩阵**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">6×6 商品兑换</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>负对数权重把乘法变加法，Dijkstra 找最优套利</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**03 金融危机**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">危机 · 恢复 · 死锁</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>为什么 Beta-bot 卡在 482？降级搜索如何解决</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**04 货币进化**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">物物 → 货币 → 数字</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>从羊换铁到金币纸币，N² 矩阵压缩为 N 向量</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**05 国际贸易**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">钻石王国</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>PPP、套利、稀缺性如何共同决定跨境汇率</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**06 能量块**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Proof-of-Work 隐喻</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>算力 + 能源 = 不可伪造的数字货币</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**07 AI 代理人**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">套利机器人</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Alpha 与 Beta 的不同风险偏好如何改变市场</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**08 元宇宙出口**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">训练场隐喻</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>如果 Emoji 世界是高级文明的 RL 沙盒？</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**09 从市场到智能**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">同构之美</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>交换链 ↔ 神经网络，均值即意义</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**10 系统智能仪表盘**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">类脑 KPI</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>Φ 整合、认知负荷、学习速率、表征效率</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">## 配套项目</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>::: {.chapter-grid}</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**📖 教程网站**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Emoji Market Tutorial</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>本教程的全部内容，跟随式学习</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>::: {.chapter-card}</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**🌍 仪表盘应用**</span><span class="co">]</span>{.chapter-num}</span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Emoji Market Dashboard</span><span class="co">]</span>{.chapter-title}</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>::: {.chapter-desc}</span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>可交互的 Streamlit 应用，本教程的最终产物</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## 💡 阅读建议</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>本教程的章节之间存在**递进关系**，但你也可以直接跳到任何一章。如果你只想看最终的仪表盘，**[第 10 章](chapters/10-dashboard.qmd)** 是一篇独立的总结。</span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="复制到剪贴板" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Emoji Market · 从对话到仪表盘"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "一个关于思想如何逐步演化为交互式系统的教程"</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: false</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>:::: {.hero}</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">教程 · Tutorial</span><span class="co">]</span>{.hero-eyebrow}</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># 思想如何生长 {#hero-title}</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>从一次朴素的对话，&lt;br&gt;到一个会思考的仪表盘。</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>:::: {.hero-subtitle}</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>这次旅程从"运煤船每月运多少煤给电厂"开始，沿着十次概念的跃迁，最终抵达一个能看见市场智能的 Streamlit 应用。每一步都源于一段真实的对话——不是结果，而是**过程**本身。</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>:::: {.hero-actions}</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">📊 打开仪表盘</span><span class="co">](https://emoji-market-dashboard.streamlit.app)</span>{.hero-btn .primary target="_blank"}</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⏵ 开始阅读</span><span class="co">](chapters/01-origin.qmd)</span>{.hero-btn .ghost}</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⭐ GitHub 仓库</span><span class="co">](https://github.com/math4mad/Emoji-Market-Tutorial)</span>{.hero-btn .ghost target="_blank"}</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## 这是一个什么样的教程？ {.mt-5}</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>很多人都有过这样的体验：和 AI 聊着聊着，一个想法突然变大、变复杂，最后竟然成了一个能运行的程序。本教程把这段"**想法的生长过程**"显式地整理出来，让你看到：</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>&lt;div class="chapter-grid"&gt;</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/01-origin.qmd"&gt;</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;01 缘起&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;从运煤船到市场&lt;/div&gt;</span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;一个没有数字的数学问题 → 物物交换表 → 中介商品的涌现&lt;/div&gt;</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/02-exchange-matrix.qmd"&gt;</span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;02 汇率矩阵&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;6×6 商品兑换&lt;/div&gt;</span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;负对数权重把乘法变加法，Dijkstra 找最优套利&lt;/div&gt;</span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/03-crisis.qmd"&gt;</span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;03 金融危机&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;危机 · 恢复 · 死锁&lt;/div&gt;</span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;为什么 Beta-bot 卡在 482？降级搜索如何解决&lt;/div&gt;</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/04-money-evolution.qmd"&gt;</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;04 货币进化&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;物物 → 货币 → 数字&lt;/div&gt;</span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;从羊换铁到金币纸币，N² 矩阵压缩为 N 向量&lt;/div&gt;</span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/05-international-trade.qmd"&gt;</span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;05 国际贸易&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;钻石王国&lt;/div&gt;</span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;PPP、套利、稀缺性如何共同决定跨境汇率&lt;/div&gt;</span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/06-energy-credits.qmd"&gt;</span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;06 能量块&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;Proof-of-Work 隐喻&lt;/div&gt;</span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;算力 + 能源 = 不可伪造的数字货币&lt;/div&gt;</span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/07-ai-agents.qmd"&gt;</span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;07 AI 代理人&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;套利机器人&lt;/div&gt;</span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;Alpha 与 Beta 的不同风险偏好如何改变市场&lt;/div&gt;</span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/08-metaverse.qmd"&gt;</span>
+<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;08 元宇宙出口&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;训练场隐喻&lt;/div&gt;</span>
+<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;如果 Emoji 世界是高级文明的 RL 沙盒？&lt;/div&gt;</span>
+<span id="cb14-71"><a href="#cb14-71" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-72"><a href="#cb14-72" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/09-intelligence.qmd"&gt;</span>
+<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;09 从市场到智能&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;同构之美&lt;/div&gt;</span>
+<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;交换链 ↔ 神经网络，均值即意义&lt;/div&gt;</span>
+<span id="cb14-76"><a href="#cb14-76" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-77"><a href="#cb14-77" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="chapters/10-dashboard.qmd"&gt;</span>
+<span id="cb14-78"><a href="#cb14-78" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;10 系统智能仪表盘&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-79"><a href="#cb14-79" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;类脑 KPI&lt;/div&gt;</span>
+<span id="cb14-80"><a href="#cb14-80" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;Φ 整合、认知负荷、学习速率、表征效率&lt;/div&gt;</span>
+<span id="cb14-81"><a href="#cb14-81" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-82"><a href="#cb14-82" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb14-83"><a href="#cb14-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-84"><a href="#cb14-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## 配套项目</span></span>
+<span id="cb14-85"><a href="#cb14-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a>&lt;div class="chapter-grid"&gt;</span>
+<span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="https://emoji-market-dashboard.streamlit.app" target="_blank"&gt;</span>
+<span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;📊 在线仪表盘&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;Emoji Market Dashboard&lt;/div&gt;</span>
+<span id="cb14-90"><a href="#cb14-90" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;已部署的 Streamlit 应用：本教程的最终产物，浏览器直接打开即可使用。&lt;/div&gt;</span>
+<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-Dashboard" target="_blank"&gt;</span>
+<span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;💻 仪表盘源码&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;Emoji-Market-Dashboard&lt;/div&gt;</span>
+<span id="cb14-95"><a href="#cb14-95" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;仪表盘的全部代码：Streamlit + NetworkX + Matplotlib，可本地运行。&lt;/div&gt;</span>
+<span id="cb14-96"><a href="#cb14-96" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-97"><a href="#cb14-97" aria-hidden="true" tabindex="-1"></a>  &lt;a class="chapter-card" href="https://github.com/math4mad/Emoji-Market-qwen" target="_blank"&gt;</span>
+<span id="cb14-98"><a href="#cb14-98" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-num"&gt;&lt;strong&gt;🧪 原始产品&lt;/strong&gt;&lt;/div&gt;</span>
+<span id="cb14-99"><a href="#cb14-99" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-title"&gt;Emoji-Market-qwen&lt;/div&gt;</span>
+<span id="cb14-100"><a href="#cb14-100" aria-hidden="true" tabindex="-1"></a>    &lt;div class="chapter-desc"&gt;第一版仿真脚本：本教程所有概念的最初发源地。&lt;/div&gt;</span>
+<span id="cb14-101"><a href="#cb14-101" aria-hidden="true" tabindex="-1"></a>  &lt;/a&gt;</span>
+<span id="cb14-102"><a href="#cb14-102" aria-hidden="true" tabindex="-1"></a>&lt;/div&gt;</span>
+<span id="cb14-103"><a href="#cb14-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-104"><a href="#cb14-104" aria-hidden="true" tabindex="-1"></a>:::: {.callout-tip}</span>
+<span id="cb14-105"><a href="#cb14-105" aria-hidden="true" tabindex="-1"></a><span class="fu">## 💡 阅读建议</span></span>
+<span id="cb14-106"><a href="#cb14-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-107"><a href="#cb14-107" aria-hidden="true" tabindex="-1"></a>本教程的章节之间存在**递进关系**，但你也可以直接跳到任何一章。如果你只想看最终的仪表盘，**[第 10 章](chapters/10-dashboard.qmd)** 是一篇独立的总结。</span>
+<span id="cb14-108"><a href="#cb14-108" aria-hidden="true" tabindex="-1"></a>::::</span></code><button title="复制到剪贴板" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/math4mad/Emoji-Market-Tutorial/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/math4mad/Emoji-Market-Tutorial/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></div></div></footer><script>
