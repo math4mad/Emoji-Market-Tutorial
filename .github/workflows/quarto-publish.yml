@@ -21,16 +21,11 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: tutorial
-
     steps:
       - uses: actions/checkout@v4
 
-      # The tutorial's figures (matplotlib/plotly embeds inside .qmd) need
-      # the same Python stack the dashboard project uses, so CI never needs
-      # torch and the run stays fast.
+      # Figures / embeds in .qmd files may need numpy/matplotlib/networkx.
+      # We never need torch in this tutorial, so the run stays fast.
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
